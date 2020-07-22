@@ -14,8 +14,7 @@ export default function Homepg() {
               <h1>Concept Mármores e Granitos</h1>
 
               <p>
-                Empresa especializada em Mármores e Granitos, com grande variedade de materiais nacionais e importados, buscando sempre atender as necessidades do cliente.
-              </p>
+              Marmoraria especializada em matérias nacionais e importados, com os melhores preços do mercado, visando sempre atender as necessidades dos clientes. Faça agora mesmo seu orçamento online, parcelamos em até 10x.              </p>
             </div>
       </div>
   );

@@ -31,8 +31,7 @@ export default function Produtos() {
                     placement={placement}
                     overlay={
                       <Tooltip id={`tooltip-${placement}`}>
-                       Silestone by Cosentino é uma marca única. Pelas suas propriedades e características, e porque quem possui Silestone se transforma em alguém único. Sua exclusividade permitiu que seja uma marca vinculada ao mundo do design e à tendência, unida aos mais altos registros de inovação e modernidade.
-                      </Tooltip>
+O composto de pedra consiste em 93% de materiais naturais brutos cuidadosamente selecionados, especialmente quartzo e granito triturado. Outros componentes são as resinas, pigmentos coloridos e fragmentos adicionais selecionados que dão ao material suas características próprias.                      </Tooltip>
                     }
                   >
                 <section>
@@ -97,12 +96,12 @@ export default function Produtos() {
                     placement={placement}
                     overlay={
                       <Tooltip id={`tooltip-${placement}`}>
-                       O granito é uma rocha formada de três minerais: mica, quartzo e feldspato. É mais duro que o mármore.
+                       Silestone by Cosentino é uma marca única. Pelas suas propriedades e características, e porque quem possui Silestone se transforma em alguém único. Sua exclusividade permitiu que seja uma marca vinculada ao mundo do design e à tendência, unida aos mais altos registros de inovação e modernidade.
                       </Tooltip>
                     }
                   >
                 <section>
-                    <img src={Silestone} alt="Granito"/>
+                    <img src={Silestone} alt="Silestone"/>
                     <div>
                         <h5 className="hover-sombra">Silestone</h5>
                         

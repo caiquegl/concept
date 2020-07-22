@@ -51,20 +51,20 @@ export default function Home(){
         let calculando1 = ((comPia*larPia)+(comFron*larFron)+(comSaia*larSaia))*selectValue;
         let calAcab = (comSaia * 80)
     
-        calculoTotal = calculando1 + calAcab;
+        calculoTotal = calculando1 + calAcab + 45+250;
 
         }else{
         let calculando1 = ((comPia*larPia)+(comFron*larFron)+(comSaia*larSaia))*selectValue;
         let calAcab = (comSaia * 40)
     
-        calculoTotal = calculando1 + calAcab;
+        calculoTotal = calculando1 + calAcab+ 45 + 250;
         }
 
         setValorTotal(calculoTotal+",00");
     }
 
     return(
-        <div className="container containerOrcamento">
+        <div className="container containerOrcamento" id="orcamento">
             <h2>
                 Faça seu orçamento
             </h2>
@@ -108,27 +108,53 @@ export default function Home(){
                     <div  id="pia">
                         <label htmlFor="comprimento">Digite o comprimento total</label>
                         <br></br>
-                        <input type="number" placeholder="Digite o comprimento"/>
+                        <input 
+                        type="number" 
+                        placeholder="Digite o comprimento"
+                        value={comPia}
+                        onChange={e => setComPia(e.target.value)}
+                        />
                         <br></br>
                         <label htmlFor="largura">Digite a largura</label>
                         <br></br>
-                        <input type="number" placeholder="Digite a largura"/>
+                        <input 
+                        type="number" 
+                        placeholder="Digite a largura"
+                        value={larPia}
+                        onChange={e => setLarPia(e.target.value)}/>
                         <br></br>
                         <label htmlFor="largura">Digite o comprimento do frontão</label>
                         <br></br>
-                        <input type="number" placeholder="Digite o comprimento do frontão"/>
+                        <input 
+                        type="number" 
+                        placeholder="Digite o comprimento do frontão"
+                        value={comFron}
+                        onChange={e => setComFron(e.target.value)}
+                        />
                         <br></br>
                         <label htmlFor="largura">Digite a altura do frontão</label>
                         <br></br>
-                        <input type="number" placeholder="Digite a altura do frontão"/>
+                        <input 
+                        type="number" 
+                        placeholder="Digite a altura do frontão"
+                        value={larFron}
+                        onChange={e => setLarFron(e.target.value)}/>
                         <br></br>
                         <label htmlFor="largura">Digite a altura da saia</label>
                         <br></br>
-                        <input type="number" placeholder="Digite a altura da saia"/>
+                        <input 
+                        type="number" 
+                        placeholder="Digite a altura da saia"
+                        value={larSaia}
+                        onChange={e => setLarSaia(e.target.value)}/>
                         <br></br>
                         <label htmlFor="largura">Digite o comprimento da saia</label>
                         <br></br>
-                        <input type="number" placeholder="Digite o comprimento da saia"/>
+                        <input 
+                        type="number" 
+                        placeholder="Digite o comprimento da saia"
+                        value={comSaia}
+                        onChange={e => setComSaia(e.target.value)}/>
                         <br></br>
                         
                         <select value={selectValue} onChange={e => setSelectValue(e.target.value)}>

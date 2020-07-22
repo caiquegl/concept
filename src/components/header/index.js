@@ -25,16 +25,16 @@ export default function Header() {
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <Link class="nav-item nav-link active" to="/home">
+              <Link class="nav-item nav-link active" href="#home">
                 Home 
               </Link>
-              <Link class="nav-item nav-link" to="/produtos">
+              <Link class="nav-item nav-link" href="#produtos">
                 Produtos
               </Link>
-              <Link class="nav-item nav-link" to="/orçamento">
+              <Link class="nav-item nav-link" to="#orçamento">
                 Orçamento
               </Link>
-              <Link class="nav-item nav-link" to="/Contato">
+              <Link class="nav-item nav-link" to="#contato">
                 Contato
               </Link>
             </div>

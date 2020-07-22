@@ -16,7 +16,7 @@ import Silestone from '../../assets/silestone1.jpg';
 
 export default function Produtos() {
   return (
-      <div className='container containerProduto'>
+      <div className='container containerProduto' id="produtos">
             <h2>
                 Nossos produtos
             </h2>

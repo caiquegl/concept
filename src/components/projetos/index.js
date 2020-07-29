@@ -14,7 +14,7 @@ export default function Projetos() {
 
 
   return (
-      <div className='container containerProjetos'>
+      <div className='container containerProjetos anime'>
           <h2>Nossos trabalhos</h2>
             <Carrocel />
       </div>

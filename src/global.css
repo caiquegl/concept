@@ -16,6 +16,16 @@ body{
     border: 0px solid transparent;
     padding: 0;
 }
+.js .anime {
+	opacity: 0;
+	transform: translate3D(-50px, 0px, 0px);
+}
+
+.js .anime-init {
+	opacity: 1;
+	transform: translate3D(0px, 0px, 0px);
+	transition: .7s all ease;
+}
 
 @media (max-width:700px){
     .containerHome{

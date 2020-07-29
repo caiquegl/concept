@@ -64,7 +64,7 @@ export default function Home(){
     }
 
     return(
-        <div className="container containerOrcamento" id="orcamento">
+        <div className="container containerOrcamento anime" id="orcamento">
             <h2>
                 Faça seu orçamento
             </h2>

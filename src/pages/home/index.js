@@ -15,6 +15,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 export default function Home(){
+
+
     return(
         <div className="container containerPai">
             <Header />
@@ -22,7 +24,7 @@ export default function Home(){
             <Produtos />
             <Projetos />
             <Orcamento />
-            <Contato />
+            <Contato/>
         </div>
     )
 }

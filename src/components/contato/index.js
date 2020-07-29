@@ -32,7 +32,7 @@ export default function Contato() {
 
 
   return (
-      <div className='container containerContato' id="contato">
+      <div className='container containerContato anime' id="contato" >
             <h2>Contato</h2>
             <div className="table">
                 <div className="form">

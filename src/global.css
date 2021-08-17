@@ -27,6 +27,17 @@ body{
 	transition: .7s all ease;
 }
 
+.containerWhats{
+    position: fixed;
+    right: 80px;
+    bottom: 10vh;
+}
+
+.containerWhats img{
+    cursor: pointer;
+    width: 60px;
+}
+
 @media (max-width:700px){
     .containerHome{
         display: block;

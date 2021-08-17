@@ -1,8 +1,5 @@
 import React, {useState} from "react";
-
-import Api from '../../api/api';
-
-
+import emailjs from 'emailjs-com';
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -10,8 +7,6 @@ const mapa = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6234002
 
 
 export default function Contato() {
-
-    
 
     const [nome, setNome] = useState("");
     const [email, setEmail] = useState("");
@@ -22,11 +17,17 @@ export default function Contato() {
   async function run(){
       const data = {
           nome: nome,
-          email: email,
+          email: 'contato.concept.marmoraria@gmail.com',
           telefone: telefone,
           msg: msg,
       }
-    await Api.post('enviar',data)
+
+      emailjs.send('contato.concept.marmorar', 'template_n858oeo', data, 'user_myrtwznhE9VcjFyKZH94n').then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    // await Api.post('enviar',data)
   }
     
 

@@ -3,9 +3,6 @@ import emailjs from 'emailjs-com';
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const mapa = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6234002064575!2d-46.209006485084984!3d-23.546043884690462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdd8792a9f3839%3A0x76b22916fa62b295!2sAv.%20Henrique%20P%C3%A9res%2C%201864%20-%20Vila%20Bernadotti%2C%20Mogi%20das%20Cruzes%20-%20SP%2C%2008735-400!5e0!3m2!1spt-BR!2sbr!4v1595434739705!5m2!1spt-BR!2sbr";
-
-
 export default function Contato() {
 
     const [nome, setNome] = useState("");
@@ -27,7 +24,6 @@ export default function Contato() {
       }, (error) => {
           console.log(error.text);
       });
-    // await Api.post('enviar',data)
   }
     
 
@@ -77,7 +73,7 @@ export default function Contato() {
                             Endereço:
                         </h3>
                         <p>
-                            Av. Henrique Péres, 1864 - Vila Bernadotti, Mogi das Cruzes
+                            R. Santa Rosa, 12 - Vl. Industrial, Mogi das Cruzes
                         </p>
                         <h3>
                             Telefone:
@@ -101,7 +97,7 @@ export default function Contato() {
                         </p>
                     </div>
 
-                    <iframe src={mapa}></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1829.149626380512!2d-46.20079151006776!3d-23.52173687823553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdd80feb2e637d%3A0xe1c6bb8434c1b4ed!2sR.%20Santa%20Rosa%2C%2012%20-%20Vila%20Industrial%2C%20Mogi%20das%20Cruzes%20-%20SP%2C%2008770-675!5e0!3m2!1spt-BR!2sbr!4v1629404002443!5m2!1spt-BR!2sbr" ></iframe>
                 </div>
             </div>
       </div>

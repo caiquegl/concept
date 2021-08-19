@@ -151,4 +151,10 @@ body{
         height: auto;
         padding-bottom: 40px;
     }
+
+    .w-100{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+      }
 }
